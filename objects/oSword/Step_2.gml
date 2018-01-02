@@ -3,12 +3,16 @@
 
 with(oPlayer){
 	//dirty hack to lower weapons y
-
-	other.y = oPlayer.y;
+	if(sprite_index == sCrouch){
+		other.y = oPlayer.y+abs(sprite_height/4);
+	}else{
+		other.y = oPlayer.y;
+	}
 	other.x = x + dir*(abs(sprite_width/2) + abs(other.sprite_width/2));
 	other.dir = dir;
 	
 }
+
 
 
 if(updateHitbox){
