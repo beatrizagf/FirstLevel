@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "79e5a2ac-fe67-4958-994f-f9e3edfa12dc",
+            "Value": {
+                "id": "b7eb9556-220a-45c3-937f-bfd97506f1f8",
+                "resourcePath": "rooms\\room2\\room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "7bace851-12f0-4d64-9a93-5b72eb6394dd",
             "Value": {
                 "id": "0c67b4c1-1b24-4f7f-8bf0-4c54dc08ceab",
@@ -291,6 +299,14 @@
             "Value": {
                 "id": "e53418ed-d61e-43fd-b55e-4eb2c8a12095",
                 "resourcePath": "sprites\/Grassland_Terrain_Tileset\/Grassland_Terrain_Tileset.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a5d04ae5-08e8-4f09-b8d6-d4f6aa7c6d02",
+            "Value": {
+                "id": "aad21d98-dd11-488a-9d42-3be8412d1c8b",
+                "resourcePath": "sprites\\sprite15\\sprite15.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -436,14 +452,6 @@
                 "id": "f639db49-5e2d-4010-bdb5-4d0d48a16b72",
                 "resourcePath": "sprites\/sPlatform\/sPlatform.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f5a6aee5-1e6e-41a3-8171-5a33cd877a4b",
-            "Value": {
-                "id": "44081f70-d615-47d6-bf01-d04962ce3913",
-                "resourcePath": "rooms\/room0\/room0.yy",
-                "resourceType": "GMRoom"
             }
         },
         {
