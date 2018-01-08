@@ -5,11 +5,11 @@ if(!gameStart){
 }
 gameStart = true;
 
-hp += other.hpToRecover * microSecondsConversion;
-with(other){
-	instance_destroy();
-}
-/*
+//hp += other.hpToRecover * microSecondsConversion;
+//with(other){
+//	instance_destroy();
+//}
+
 if(hp < maxHp){
 	hp += other.hpToRecover * microSecondsConversion;
 	if( hp > maxHp){
@@ -19,4 +19,3 @@ if(hp < maxHp){
 		instance_destroy();
 	}
 }
-*/
