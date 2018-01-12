@@ -127,8 +127,13 @@ if(signHsp != 0){
 
 if(key_jump){
 	if(grounded){
-		vsp = jmpsp;
-	}	
+		audio_play_sound(snd_jump, 10, false);
+		if(down){
+			vsp = dwnJmpSp;
+		}else{
+			vsp = jmpsp;
+		}
+	}
 }
 
 if( (vsp < 0) && (!key_jump_pressed)){
@@ -170,7 +175,7 @@ if(!wallCheck){
 }
 
 //Weapons
-if(attack && !current_weapon.cooldown){
+if(attack && current_weapon.can_attack){
 	if(!is_her_weapon_a_sword){
 		is_her_weapon_a_sword = true;
 		with(current_weapon){
