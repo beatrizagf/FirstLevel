@@ -11,8 +11,6 @@ with(other){
 			imune = true;
 			hit = true;
 			alarm[0] = room_speed * (abs(other.attackRetry-other.attackTime) + other.attackTime);
-		} else {
-			audio_play_sound(snd_damage, 10, false);
 		}
 	}
 }

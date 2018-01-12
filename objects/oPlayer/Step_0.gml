@@ -97,8 +97,8 @@ if( hp < 0 ){
 		
 		end_game=1;
 		victory=0;
-		end_time=1;
 		global.endTime = get_timer();
+		break;
 		//instance_destroy(oPlayer);
 		//game_restart();
 	}
@@ -127,13 +127,8 @@ if(signHsp != 0){
 
 if(key_jump){
 	if(grounded){
-		audio_play_sound(snd_jump, 10, false);
-		if(down){
-			vsp = dwnJmpSp;
-		}else{
-			vsp = jmpsp;
-		}
-	}
+		vsp = jmpsp;
+	}	
 }
 
 if( (vsp < 0) && (!key_jump_pressed)){
@@ -175,7 +170,7 @@ if(!wallCheck){
 }
 
 //Weapons
-if(attack && current_weapon.can_attack){
+if(attack && !current_weapon.cooldown){
 	if(!is_her_weapon_a_sword){
 		is_her_weapon_a_sword = true;
 		with(current_weapon){

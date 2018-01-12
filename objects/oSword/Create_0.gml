@@ -17,8 +17,3 @@ if(instance_exists(oPlayer)){
 		other.dir = dir;
 	}
 }
-
-can_attack = true;
-attack_cooldown = 1.3;
-current_attack_cooldown = room_speed * attack_cooldown;
-image_index = 58;

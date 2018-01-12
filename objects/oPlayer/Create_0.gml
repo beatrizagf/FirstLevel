@@ -19,7 +19,7 @@ dir=1;
 //dash_time = 1000000; //1 segundo em microssegundos
 maxMunition=2;
 munition = maxMunition;
-maxJumps = 1; //0 = no double jump, 1+ number of jumps after initial one
+maxJumps = 0; //0 = no double jump, 1+ number of jumps after initial one
 dJump = maxJumps;
 
 weaponOutOfCooldown=true;
@@ -66,7 +66,7 @@ attack_key_ctrl = mb_left; //left mouse button;
 left_right_ctrl_ps = gp_axislh; //Analog, if changed, movement needs to be changed
 jump_key_ctrl_ps = gp_face1; //X on Ps
 up_down_ctrl_ps = gp_axislv;
-attack_key_ctrl_ps = gp_face2; //O on Ps
+attack_key_ctrl_ps = gp_face3; //O on Ps
 //dash_key_ctrl_ps = gp_face3; //Square on Ps
 //bow_key_ctrl_ps = gp_face4; //Triangle on Ps
 reset_key_ctrl_ps = gp_select;
@@ -76,5 +76,3 @@ type =0;
 //Dash
 //current_dash_cooldown = room_speed * dash_cooldown;
 image_index = 29;
-
-audio_play_sound(snd_background, 10, true);
